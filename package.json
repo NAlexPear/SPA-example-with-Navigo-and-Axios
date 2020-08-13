@@ -6,7 +6,7 @@
   "scripts": {
     "parcel-build": "parcel build index.html && cp _redirects ./dist/",
     "serve": "parcel index.html",
-    "watch:server": "nodemon ./server/echo.js"
+    "watch:server": "nodemon --watch ./server -e js ./server/index.js"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +27,8 @@
   "dependencies": {
     "axios": "^0.19.2",
     "lodash": "^4.17.15",
+    "lodash-id": "^0.14.0",
+    "lowdb": "^1.0.0",
     "navigo": "^7.1.2"
   }
 }
